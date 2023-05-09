@@ -13,6 +13,11 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 html {
   font-size: 62.5%;
@@ -50,15 +55,7 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+  padding: 1rem;
 }
 button:hover {
   border-color: #646cff;
@@ -66,6 +63,16 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+.btn {
+  padding: 1.5rem 3rem;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #242424;
+  background-color: #f2f2f2;
 }
 
 @media (prefers-color-scheme: light) {

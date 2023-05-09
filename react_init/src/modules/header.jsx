@@ -1,7 +1,9 @@
-//** === Component Header ===  */
+//** === Component Module Header ===  */
 import "../assets/css/header.css";
 import img from "../assets/icon/icons8-cloud-100.png";
 import imgHero from "../assets/img/people.jpg";
+import { Button } from "../components/Button";
+import { TaskCard } from "../components/Task";
 
 export function Header(props) {
   console.log(props);
@@ -33,8 +35,10 @@ export function Header(props) {
           <div className="hero-text">
             <h2>Title: {props.title}</h2>
             <p>Paragraph: {props.text}</p>
+            <Button text="Start" />
           </div>
         </section>
+        <TaskCard ready={true} />
       </header>
     </>
   );
