@@ -1,10 +1,12 @@
+//** === ==== First Component ==== === */
 //import { useState } from 'react'
 import "./App.css";
+import { Header } from "./modules/header";
 
 function App() {
   return (
     <>
-      <div>Hello World React Js</div>
+      <Header title="Hero Section" text="Paragraph components" />
     </>
   );
 }
