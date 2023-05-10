@@ -10,10 +10,11 @@ import imgHero from "../assets/img/people.jpg";
   handleChange,
 } from "../components/eventHandler/Buttons"; */
 import { Post } from "../fetch/Post";
+import { Users } from "../fetch/Arrays";
 
 //**? ===> Header */
 export function Header(props) {
-  console.log(props);
+  //console.log(props);
   return (
     <>
       <header className="header">
@@ -49,6 +50,7 @@ export function Header(props) {
           </div>
         </section>
         <Post />
+        <Users />
       </header>
     </>
   );
