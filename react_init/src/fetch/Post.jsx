@@ -1,5 +1,6 @@
 //**! === Fetch ==== Component API Rest ==== === */
 import "/src/index.css";
+import { VscAdd } from "react-icons/vsc";
 
 //**! === Fetch Component === */
 export const Post = () => {
@@ -17,6 +18,7 @@ export const Post = () => {
         }
       }}
     >
+      <VscAdd />
       Data
     </button>
   );
