@@ -9,6 +9,7 @@ import {
   Toolbar,
   handleChange,
 } from "../components/eventHandler/Buttons";
+import { Post } from "../fetch/Post";
 
 //**? ===> Header */
 export function Header(props) {
@@ -47,6 +48,7 @@ export function Header(props) {
             <input id="hello" onChange={handleChange} />
           </div>
         </section>
+        <Post />
       </header>
     </>
   );
