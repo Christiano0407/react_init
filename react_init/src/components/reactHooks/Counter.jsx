@@ -1,6 +1,6 @@
-//**! === Component React Hooks ===  */
+//**! === Component React Hooks ===  ==> UseState & useEffect <==  === */
 //** === Import */
-import { useState } from "react";
+import { useState, useEffect } from "react";
 /** Variable and Function => Index - setIndex  = useState */
 /** useState > method reduce (Remember) */
 //**! === Component */
@@ -8,7 +8,10 @@ import { useState } from "react";
 export function Counter() {
   //let counter = 0;
   const [counter, setCounter] = useState(0);
-  const [message, setMessage] = useState("");
+  //const [message, setMessage] = useState("");
+  useEffect(() => {
+    console.log("Render");
+  }, []);
 
   return (
     <>
@@ -22,7 +25,6 @@ export function Counter() {
         >
           Start
         </button>
-
         <button
           onClick={() => {
             setCounter(counter - 1);
@@ -30,7 +32,6 @@ export function Counter() {
         >
           Restart
         </button>
-
         <button
           onClick={() => {
             setCounter(0);
@@ -38,14 +39,12 @@ export function Counter() {
         >
           Init
         </button>
-
-        <input
+        {/* <input
           onChange={(e) => {
             console.log(e.target.value);
             setMessage(e.target.value);
           }}
         />
-
         <button
           onClick={() => {
             console.log(message);
@@ -53,7 +52,7 @@ export function Counter() {
         >
           message
         </button>
-        <span>{message}</span>
+        <span>{message}</span>; */}
       </div>
     </>
   );
