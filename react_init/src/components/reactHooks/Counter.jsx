@@ -8,6 +8,8 @@ import { useState } from "react";
 export function Counter() {
   //let counter = 0;
   const [counter, setCounter] = useState(0);
+  const [message, setMessage] = useState("");
+
   return (
     <>
       <div>
@@ -36,6 +38,22 @@ export function Counter() {
         >
           Init
         </button>
+
+        <input
+          onChange={(e) => {
+            console.log(e.target.value);
+            setMessage(e.target.value);
+          }}
+        />
+
+        <button
+          onClick={() => {
+            console.log(message);
+          }}
+        >
+          message
+        </button>
+        <span>{message}</span>
       </div>
     </>
   );
