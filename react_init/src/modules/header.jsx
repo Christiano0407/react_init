@@ -9,8 +9,8 @@ import imgHero from "../assets/img/people.jpg";
   Toolbar,
   handleChange,
 } from "../components/eventHandler/Buttons"; */
-import { Post } from "../fetch/Post";
-import { Users } from "../fetch/Arrays";
+/* import { Post } from "../fetch/Post";
+import { Users } from "../fetch/Arrays"; */
 
 //**? ===> Header */
 export function Header(props) {
@@ -49,8 +49,8 @@ export function Header(props) {
             <input id="hello" onChange={handleChange} /> */}
           </div>
         </section>
-        <Post />
-        <Users />
+        {/*  <Post />
+        <Users /> */}
       </header>
     </>
   );
