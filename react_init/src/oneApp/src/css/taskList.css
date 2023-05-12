@@ -1,0 +1,18 @@
+.section-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+}
+.form-task {
+  width: 400px;
+  border: 2px solid #f2f2f2;
+  padding: 1rem;
+}
+.input-form {
+  padding: 1rem;
+}
+.btn-form {
+  margin-left: 1rem;
+}

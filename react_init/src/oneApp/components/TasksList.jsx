@@ -1,34 +1,25 @@
 //**! === ===== Component TasList ====== === */
 //** === Import */
-import { useState, useEffect } from "react";
-import { dataTask as data } from "../data/taskData";
 import "/src/index.css";
 import "../src/css/taskList.css";
 
 //**! ==== TasList ==== */
-export function TasksList() {
+function TasksList(props) {
   /* console.log(data); */
-  const [tasks, setTasks] = useState([]);
 
-  useEffect(() => {
-    setTasks(data);
-  }, []);
-
-  if (tasks.length === 0) {
-    return <span>This task not exist</span>;
+  if (props.tasks.length === 0) {
+    return <h1>This task not exist</h1>;
   }
-
   return (
-    <>
-      <h1>TaskList</h1>
-      <div className="task__list">
-        {tasks.map((task) => {
-          <div key={task.id}>
-            <h2>{task.title}</h2>
-            <p>{task.description}</p>
-          </div>;
-        })}
-      </div>
-    </>
+    <div>
+      {props.tasks.map((task) => {
+        <div key={task.id}>
+          <h1>{task.title}</h1>
+          <p>{task.description}</p>
+        </div>;
+      })}
+    </div>
   );
 }
+
+export default TasksList;
