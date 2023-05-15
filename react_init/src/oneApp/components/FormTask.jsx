@@ -25,6 +25,7 @@ export const FormTask = ({ createList }) => {
   return (
     <>
       <section className="section-form">
+        <h1 className="formulary">Formulary Tasks</h1>
         <form onSubmit={handleSubmit} className="form-task">
           <input
             className="input-form"

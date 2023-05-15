@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   margin: 2rem auto;
+  flex-direction: column;
 }
 .form-task {
   width: 500px;
@@ -11,13 +12,19 @@
   padding: 2rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .input-form {
   padding: 1rem;
   margin: 1rem auto;
+  width: 90%;
 }
 .btn-form {
   margin-top: 2rem;
+  width: 25%;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
 }
 .list-plus {
   padding: 1rem;
@@ -28,6 +35,14 @@
   padding: 0.5rem;
 }
 textarea {
+  width: 90%;
   padding: 1rem;
   margin: 1rem auto;
+}
+.formulary {
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem auto;
+  font-weight: 900;
+  text-transform: uppercase;
 }

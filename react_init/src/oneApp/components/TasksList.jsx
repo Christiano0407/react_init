@@ -14,7 +14,7 @@ function TasksList({ tasks }) {
   return (
     <div className="list-plus">
       {tasks.map((task) => (
-        <TaskCards task={task} />
+        <TaskCards key={task.id} task={task} />
       ))}
     </div>
   );

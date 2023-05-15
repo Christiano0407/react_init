@@ -7,7 +7,7 @@ import "../src/css/taskList.css";
 export const TaskCards = ({ task }) => {
   return (
     <div className="task-card">
-      <h1>{task.title}</h1>
+      <h2>{task.title}</h2>
       <p>{task.description}</p>
     </div>
   );
