@@ -20,6 +20,8 @@ export const FormTask = ({ createList }) => {
       title,
       description,
     });
+    setTitle("");
+    setDescription("");
   };
 
   return (
@@ -33,14 +35,17 @@ export const FormTask = ({ createList }) => {
             onChange={(e) => {
               setTitle(e.target.value);
             }}
+            value={title}
+            autoFocus
           />
           <textarea
             placeholder="Describe your task"
             onChange={(e) => {
               setDescription(e.target.value);
             }}
+            value={description}
           ></textarea>
-          <button className="btn-form">Up</button>
+          <button className="btn-form">Task</button>
         </form>
       </section>
     </>

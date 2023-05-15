@@ -9,6 +9,7 @@
 .form-task {
   width: 500px;
   border: 2px solid #f2f2f2;
+  border-radius: 1rem;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -25,6 +26,17 @@
   outline: none;
   border: none;
   border-radius: 0.5rem;
+  background-color: #f2f2f2;
+  color: #333;
+}
+.delete {
+  background-color: red;
+  color: #f2f2f2;
+  margin-top: 0.5rem;
+  width: 15%;
+}
+.delete:active {
+  transform: scale(0.9);
 }
 .list-plus {
   padding: 1rem;
