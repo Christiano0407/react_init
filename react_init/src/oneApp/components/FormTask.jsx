@@ -16,7 +16,10 @@ export const FormTask = ({ createList }) => {
       description: "Prove New Task",
     }; */
     console.log(title, description);
-    createList(title);
+    createList({
+      title,
+      description,
+    });
   };
 
   return (

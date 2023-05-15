@@ -6,17 +6,28 @@
   margin: 2rem auto;
 }
 .form-task {
-  width: 400px;
+  width: 500px;
   border: 2px solid #f2f2f2;
-  padding: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 .input-form {
   padding: 1rem;
+  margin: 1rem auto;
 }
 .btn-form {
-  margin-left: 1rem;
+  margin-top: 2rem;
 }
 .list-plus {
   padding: 1rem;
   margin: 2rem auto;
+}
+.task-card {
+  margin: 1rem auto;
+  padding: 0.5rem;
+}
+textarea {
+  padding: 1rem;
+  margin: 1rem auto;
 }
