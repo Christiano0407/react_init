@@ -14,8 +14,15 @@ function App() {
     setTasks(data);
   }, []);
 
-  function createList(task) {
-    setTasks([...tasks, tasks]);
+  function createList(taskTitle) {
+    setTasks([
+      ...tasks,
+      {
+        title: taskTitle,
+        id: tasks.length,
+        description: "New Task Four",
+      },
+    ]);
   }
 
   return (

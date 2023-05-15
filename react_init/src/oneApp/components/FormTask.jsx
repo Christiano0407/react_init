@@ -6,13 +6,17 @@ import "../src/css/taskList.css";
 //**! ==== === Form Component === */
 export const FormTask = ({ createList }) => {
   const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const newTask = {
+    /* const newTask = {
       title,
-    };
-    console.log(newTask);
+      id: 4,
+      description: "Prove New Task",
+    }; */
+    console.log(title, description);
+    createList(title);
   };
 
   return (
@@ -26,6 +30,12 @@ export const FormTask = ({ createList }) => {
               setTitle(e.target.value);
             }}
           />
+          <textarea
+            placeholder="Describe your task"
+            onChange={(e) => {
+              setDescription(e.target.value);
+            }}
+          ></textarea>
           <button className="btn-form">Up</button>
         </form>
       </section>

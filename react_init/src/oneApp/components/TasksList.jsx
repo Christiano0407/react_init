@@ -2,22 +2,20 @@
 //** === Import */
 import "/src/index.css";
 import "../src/css/taskList.css";
+import { TaskCards } from "./TaskCards";
 
 //**! ==== TasList ==== */
-function TasksList(props) {
+function TasksList({ tasks }) {
   /* console.log(data); */
 
-  if (props.tasks.length === 0) {
+  if (tasks.length === 0) {
     return <h1>This task not exist</h1>;
   }
   return (
-    <div>
-      {props.tasks.map((task) => {
-        <div key={task.id}>
-          <h1>{task.title}</h1>
-          <p>{task.description}</p>
-        </div>;
-      })}
+    <div className="list-plus">
+      {tasks.map((task) => (
+        <TaskCards task={task} />
+      ))}
     </div>
   );
 }
