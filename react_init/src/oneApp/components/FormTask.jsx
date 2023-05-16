@@ -1,24 +1,17 @@
 //**! ============== === Component Task Form === ==================== */
 import { useState, useContext } from "react";
-//import { someContext } from "../context/Context";
+import { someContext } from "../context/Context";
 import "/src/index.css";
 import "../src/css/taskList.css";
 
 //**! ==== === Form Component === */
-export const FormTask = ({ createList }) => {
+export const FormTask = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
-
-  /* const values = useContext(someContext);
-  console.log(values); */
+  const { createList } = useContext(someContext);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    /* const newTask = {
-      title,
-      id: 4,
-      description: "Prove New Task",
-    }; */
     console.log(title, description);
     createList({
       title,
