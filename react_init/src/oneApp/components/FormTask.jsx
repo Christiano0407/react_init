@@ -1,5 +1,6 @@
 //**! ============== === Component Task Form === ==================== */
-import { useState } from "react";
+import { useState, useContext } from "react";
+//import { someContext } from "../context/Context";
 import "/src/index.css";
 import "../src/css/taskList.css";
 
@@ -7,6 +8,9 @@ import "../src/css/taskList.css";
 export const FormTask = ({ createList }) => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
+
+  /* const values = useContext(someContext);
+  console.log(values); */
 
   const handleSubmit = (e) => {
     e.preventDefault();
