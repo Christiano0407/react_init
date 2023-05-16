@@ -10,7 +10,7 @@ import "../src/css/taskList.css";
 export const TaskCards = ({ task }) => {
   const { deleteTask } = useContext(someContext);
   return (
-    <div className="task-card">
+    <div className="task-card bg-zinc-800 text-center ">
       <h2>{task.title}</h2>
       <p>{task.description}</p>
       <button
