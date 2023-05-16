@@ -14,7 +14,7 @@ function TasksList() {
     return <h1>This task no exist</h1>;
   }
   return (
-    <div className="list-plus">
+    <div className="list-plus grid grid-cols-4 gap-3 grid-flow-row ">
       {tasks.map((task) => (
         <TaskCards key={task.id} task={task} />
       ))}

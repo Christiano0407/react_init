@@ -42,7 +42,7 @@ export const FormTask = () => {
             }}
             value={description}
           ></textarea>
-          <button className="btn-form">Task</button>
+          <button className="btn-form font-bold text-3xl">Task</button>
         </form>
       </section>
     </>

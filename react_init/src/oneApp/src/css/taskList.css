@@ -8,7 +8,7 @@
 }
 .form-task {
   width: 500px;
-  border: 2px solid #f2f2f2;
+  border: 6px solid #333;
   border-radius: 1rem;
   padding: 2rem;
   display: flex;
@@ -26,14 +26,14 @@
   outline: none;
   border: none;
   border-radius: 0.5rem;
-  background-color: #f2f2f2;
-  color: #333;
+  background-color: #333;
+  color: #f2f2f2;
 }
 .delete {
   background-color: red;
   color: #f2f2f2;
-  margin-top: 0.5rem;
-  width: 15%;
+  margin-top: 1.5rem;
+  width: 90%;
 }
 .delete:active {
   transform: scale(0.9);
@@ -44,7 +44,8 @@
 }
 .task-card {
   margin: 1rem auto;
-  padding: 0.5rem;
+  padding: 1rem;
+  width: 100%;
 }
 textarea {
   width: 90%;
@@ -57,4 +58,5 @@ textarea {
   margin: 1rem auto;
   font-weight: 900;
   text-transform: uppercase;
+  color: #333;
 }
